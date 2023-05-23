@@ -16,15 +16,6 @@ tasks:
     src: ./tmp/qbcore/server.cfg
     dest: ./server.cfg
 
-  - action: move_path
-    src: ./tmp/qbcore/myLogo.png
-    dest: ./myLogo.png
-
-  # Prepare Database
-  - action: connect_database
-  - action: query_database
-    file: ./tmp/qbcore/qbcore.sql
-
   # STANDALONE
   - action: download_github
     src: https://github.com/citizenfx/cfx-server-data
